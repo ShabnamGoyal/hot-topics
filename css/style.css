@@ -1,0 +1,369 @@
+/*
+Color Scheme:
+       Green:  #6ABE52;
+        Gray   #21212D;
+        Grey (from algonquin website)   #707070;
+      
+Font: Heading  : font-family: "Halant", "Times New Roman", Times, serif;
+            Body : font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+*/
+
+/* General*/
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Halant", "Times New Roman", Times, serif;
+}
+
+body {
+  font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  color: #333333;
+  margin: 0;
+  line-height: 1.6rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 90%;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+}
+.logo h2 {
+  height: auto;
+  margin-left: 1rem;
+  color: #ffe400;
+  display: block;
+}
+
+/* Navigation */
+nav {
+  padding: 0.5rem 0 0;
+  font-weight: 600;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #064c6e;
+  box-shadow: 2px 1px 2px;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-left: 3.5rem;
+  font-size: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#active {
+  background-color: #fff;
+  color: #064c6e;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+/* Masthead */
+.masthead {
+  background-size: cover;
+  background-image: url("../img/masthead.jpg");
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 0;
+  position: relative;
+}
+
+.masthead h1 {
+  max-width: 50%;
+  font-weight: bold;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgba(33, 33, 45, 0.8);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  color: #fff;
+}
+
+/* ----------------home style----------------- */
+.topics .home_Img,
+.topics p {
+  width: 100%;
+}
+
+.topics p {
+  text-align: justify;
+}
+
+.topics .home_Img {
+  height: 400px;
+  width: 400px;
+  text-align: center;
+  margin-left: 0;
+}
+.wrapper .row {
+  text-align: center;
+}
+/* content ends here */
+
+/* Footer */
+footer {
+  background-color: #064c6e;
+  padding: 00.5rem;
+  color: #fff;
+}
+.social-media {
+  margin-top: 0.5rem;
+}
+
+.social-media a i {
+  color: #ffe400;
+}
+.footer-col {
+  width: 100%;
+  padding: 0 3rem;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #fff;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer p {
+  color: #fff;
+}
+
+.footer-col .social-media a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-media a i {
+  text-align: center;
+}
+
+/* ----------------portfolio----------------- */
+.container {
+  max-width: 100%;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.cards_row {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: auto;
+}
+
+figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure figcaption {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* MEDIA QUERY */
+/**********Mobile***********/
+/********************************/
+
+@media only screen and (max-width: 30rem) {
+  body {
+    font-size: 0.75rem;
+  }
+
+  .logo img {
+    width: 200px;
+    height: auto;
+    margin: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  /* Navigation */
+  nav {
+    padding-bottom: 0.5rem;
+    color: #fff;
+  }
+
+  nav ul li {
+    display: block;
+    padding-bottom: 1.2rem;
+    font-size: 1.2rem;
+  }
+
+  .content {
+    display: block;
+    width: 100%;
+  }
+  .content img {
+    height: 250px;
+    width: auto;
+  }
+
+  .content p {
+    padding-top: 1rem;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    margin: 0;
+  }
+
+  .social-media a img {
+    height: 1.5rem;
+    width: auto;
+  }
+}
+
+/**********Tablet View***********/
+/********************************/
+@media screen and (min-width: 36rem) {
+  body {
+    font-size: 1rem;
+  }
+
+  /*-----------*/
+  .topics .home_Img {
+    float: left;
+    margin-right: 2rem;
+  }
+
+  .topics .home_Img img {
+    display: block;
+    width: 100%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+  }
+
+  .topics p {
+    width: auto;
+    float: none;
+  }
+
+  footer {
+    display: inline-block;
+    margin-top: 4rem;
+  }
+  .footer-col {
+    width: 40%;
+    display: block;
+    float: left;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .container h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .cards_row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .cards_row figure {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+/*--------------------------------------------------*/
+@media screen and (min-width: 80rem) {
+  body {
+    font-size: 1.25rem;
+  }
+
+  .navbar ul li {
+    display: inline-block;
+    font-size: 2rem;
+  }
+
+  .topics .home_Img {
+    margin-right: 2rem;
+  }
+
+  .topics .home_Img img {
+    display: block;
+    width: 100%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+  }
+
+  hr {
+    width: 100%;
+    margin-top: 4rem;
+    display: inline-block;
+  }
+  .topics p {
+    width: auto;
+    float: none;
+  }
+
+  footer {
+    display: inline-block;
+    margin-top: 4rem;
+  }
+  .footer-col {
+    width: 30%;
+    display: block;
+    float: left;
+  }
+  .cards_row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+}
